@@ -1,38 +1,201 @@
 .App {
-  text-align: center;
+  color: White;
+  background: hsl(230, 17%, 14%);
+  position: static;
+  padding-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppLight {
+  background: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App p {
+  color: hsl(228, 34%, 66%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.AppLight h2 {
+  color: rgb(72, 72, 72);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App .App-header {
+  background: hsl(232, 19%, 15%);
+  padding: 2px 10% 100px 10%;
+  border-radius: 0 0 20px 20px;
+}
+
+.AppLight .App-header {
+  background: hsl(225, 100%, 98%);
+}
+
+.App .App-header hr {
+  height: 1px;
+  border: none;
+  background: white;
+}
+
+.AppLight .App-header hr {
+  background: rgb(58, 58, 58);
+}
+
+.App-header .toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.AppLight .App-header .toggle .faToggle {
+  color: hsl(230, 22%, 74%);
+}
+
+.App-header .toggle .faToggle {
+  color: hsl(163, 72%, 41%);
+  font-size: 2.7em;
+}
+
+.App .first {
+  width: 80%;
+  margin: -80px auto 0 auto;
+  text-align: center;
+}
+
+.App .first .Cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.AppLight .first .Cards .Card {
+  background: hsl(227, 47%, 96%);
+}
+
+.App .first .Card {
+  background: hsl(228, 28%, 20%);
+  padding: 25px 0;
+  margin: 25px 0 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.App .first .title {
+  text-align: left;
+}
+
+.App .first .Card:hover {
+  background: hsl(229, 27%, 31%);
+}
+
+.AppLight .first .Cards .Card:hover {
+  background: hsl(225, 8%, 90%);
+}
+
+.App .first .Card.Facebook {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.App .first .Card.Facebook .Icon {
+  color: hsl(208, 92%, 53%);
+}
+
+.App .first .Card.Twitter {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.App .first .Card.Twitter .Icon {
+  color: hsl(203, 89%, 53%);
+}
+
+.App .first .Card.Youtube {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.App .first .Card.Youtube .Icon {
+  color: hsl(348, 97%, 39%);
+}
+
+/* .App .first .Cards .Card .name p{
+  margin: 0;
+}
+.App .first .Cards .Card .name{
+align-items: center;
+justify-content: center;
+gap: 5px;
+display: flex;
+} */
+
+.App .first .Card.Instagram {
+  border-top-width: 1px;
+  border-top: 4px solid hsl(329, 70%, 58%);
+  /* border-top: 2px  linear-gradient(0deg, from hsl(37, 97%, 70%), to hsl(329, 70%, 58%)); */
+}
+
+.App .first .Card.Instagram .Icon {
+
+  color: hsl(37, 97%, 70%);
+}
+
+
+.App .first .Card p.loss {
+  color: hsl(356, 69%, 56%);
+}
+
+.App .first .Card p.gain {
+  color: hsl(163, 72%, 41%);
+}
+
+.Card .Icon.Facebook {
+  color: hsl(208, 92%, 53%);
+}
+
+.Card .Icon.Twitter {
+  color: hsl(203, 89%, 53%);
+}
+
+.Card .Icon.Instagram {
+  color: hsl(37, 97%, 70%);
+}
+
+.Card .Icon.Youtube {
+  color: hsl(348, 97%, 39%);
+}
+
+.Card .box {
+  display: flex;
+  align-items: center;
+  padding: 10px 10%;
+  justify-content: space-between;
+}
+
+.Card .box p {
+  margin: 0;
+}
+
+.Card .box h2 {
+  margin: 0;
+}
+
+
+@media(min-width:900px) {
+  .App .first .Cards {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App .first .Card {
+    width: 40%;
+  }
+}
+
+@media(min-width:1100px) {
+  .App .first .Cards {
+    flex-direction: row;
+  }
+
+  .App .first .Card {
+    width: 23%;
   }
 }
